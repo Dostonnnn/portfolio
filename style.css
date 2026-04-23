@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #a78bfa, #6366f1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.header-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #cbd5f5;
+    width: 90px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.header-link:hover {
+    background-color: #a78bfa;
+    transform: translateY(-2px);
+}
+
+.header-link:focus {
+    background-color: #6366f1;
+}
+
+.header-link:hover {
+    color: #fff;
+}
+
+button, .header-btn {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(90deg, #a78bfa, #6366f1);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.header-btn {
+    border-radius: 50% !important;
+    padding: 10px !important;
+    width: 40px;
+    height: 40px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(99, 102, 241, 0.5);
+}
+
+.intro {
+    padding: 100px 60px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.intro-left {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sub-title {
+    color: #94a3b8;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 52px;
+    line-height: 1.2;
+}
+
+.highlight {
+    background: linear-gradient(90deg, #a78bfa, #6366f1);
+
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.text {
+    color: #cbd5f5;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.intro-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.intro-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.cards-card {
+    flex: 1;
+    padding: 25px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: all 0.4s linear;
+}
+
+.cards-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(90deg, #a78bfa, #6366f1);
+}
+
+.intro-right {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.right-box {
+    width: 70%;
+    padding: 35px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.nav hr {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #cbd5f5;
+}
+
+.summary, .skills, .languages, .projects {
+    padding: 100px 60px;
+    text-align: start;
+}
+
+.languages-name, .summary-title, .skills-title, .projects-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #a78bfa, #6366f1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.summary-text {
+    max-width: 1000px;
+    color: #cbd5f5;
+    line-height: 1.7;
+}
+
+.skills-names {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.skills-name {
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background: linear-gradient(90deg, #a78bfa, #6366f1);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.skills-name:hover {
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 5px 20px rgba(99, 102, 241, 0.5);
+}
+
+.language-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.languages-language, .projects-project {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 50px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: start;
+    background: rgba(15, 23, 42, 0.7);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.languages-language:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.lan, .project-title {
+    font-size: 24px;
+}
+
+.level, .project-text {
+    opacity: 0.7;
+}
+
+.projects-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.project-spans {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-span {
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.project-span:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.project-link {
+    width: 100px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-link:hover {
+    background: linear-gradient(90deg, #a78bfa, #6366f1);
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(99, 102, 241, 0.5);
+}
